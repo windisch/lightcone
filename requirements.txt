@@ -1,5 +1,5 @@
 numpy>=1.23.0
 pandas>=1.5.0
 torch
-plotly
-dash
+#plotly
+#dash
