@@ -93,3 +93,10 @@ class TestAutoencoder(unittest.TestCase):
             X = torch.randn(5, 1, 20, 20)
             Y = self.model.encoder(X)
         self.assertEqual(Y.shape, torch.Size([5, 2]))
+
+    def test_get_embedding(self):
+        embedding = self.model.get_embedding(self.loader)
+        self.assertTupleEqual(
+            embedding.shape,
+            (100, 2)
+        )
