@@ -8,6 +8,27 @@
 A framework to explore the latent space of convolutional autoencoders
 implemented in `pytorch`.
 
+## Example
+
+Compose your decoder and your encoder into the `lightcone`
+autoencoder:
+
+```python
+from lightcone.models import AutoEncoder
+
+model = AutoEncoder(encoder=your_encoder, decoder=your_decoder)
+```
+
+After `model` has been training, the latent space can be explored as
+follows:
+
+```python
+model.explore(data_loader=your_data_loader)
+```
+
+
+
+
 ## Jupyter Dash
 Make sure to install and activate the Jupyter notebook extenstion
 
@@ -15,3 +36,4 @@ Make sure to install and activate the Jupyter notebook extenstion
 jupyter nbextension install --py jupyter_dash
 jupyter nbextension enable --py jupyter_dash
 ```
+
