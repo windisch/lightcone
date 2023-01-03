@@ -19,14 +19,12 @@ from lightcone.models import AutoEncoder
 model = AutoEncoder(encoder=your_encoder, decoder=your_decoder)
 ```
 
-After `model` has been training, the latent space can be explored as
-follows:
+After `model` has been training, the latent space can be explored in a
+Jupyter-Notebook as follows
 
 ```python
 model.explore(data_loader=your_data_loader)
 ```
-
-
 
 
 ## Jupyter Dash
