@@ -22,7 +22,7 @@ setup(
     ],
     # metadata for upload to PyPI
     author="Tobias Windisch",
-    author_email="tobias.windisch@posteo.de",
+    author_email="tobias.windisch@hs-kempten.de",
     description="A framework to explore the latent space of autoencoders implemented in torch",
     license="Apache-2.0",
     long_description=(Path(__file__).parent / "README.md").read_text(),
